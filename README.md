@@ -26,7 +26,9 @@ The code is organized into several sections:
 
 To use this code, follow these steps:
 
-1. Set the paths to your image folder and vector CSV file in the script.
+1. install requirements.txt
+
+2. Set the paths to your image folder and vector CSV file in the script.
 
 ```python
 image_folder = '/path/to/your/image/folder/'
@@ -37,4 +39,6 @@ vector_csv_path = '/path/to/your/vector/file.csv'
 
 Feel free to adapt the code to your specific use case and modify the architecture of the neural network as needed.
 
-## Requirements
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
