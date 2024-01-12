@@ -18,8 +18,8 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras import layers
 
 # Set the paths to your data folders/files
-image_folder = '/Users/arpanrajpurohit/Desktop/files/Experiments/Positional_Data/Screenshots/'
-vector_csv_path = '/Users/arpanrajpurohit/Desktop/files/Experiments/Positional_Data/Positions.csv'
+image_folder = 'Screenshots/'
+vector_csv_path = 'Screenshots/Positions.csv'
 
 # Load image data
 num_images = 8000
