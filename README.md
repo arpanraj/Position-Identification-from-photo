@@ -31,7 +31,7 @@ To use this code, follow these steps:
 ```python
 image_folder = '/path/to/your/image/folder/'
 vector_csv_path = '/path/to/your/vector/file.csv'
-
+```
 2. Run the script, and the model will be trained on your data.
 3. Evaluate the model and utilize it for making predictions on new images.
 
