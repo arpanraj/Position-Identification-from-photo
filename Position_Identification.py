@@ -16,10 +16,11 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras import layers
+import random
 
 # Set the paths to your data folders/files
-image_folder = 'Screenshots/'
-vector_csv_path = 'Screenshots/Positions.csv'
+image_folder = '/Dataset/Screenshots/'
+vector_csv_path = '/Dataset/Positions.csv'
 
 # Load image data
 num_images = 8000
@@ -38,6 +39,7 @@ vector_df = pd.read_csv(vector_csv_path, header=None, skiprows=2).drop(3, axis=1
 
 
 num_samples = 5
+sample_ids  = [random.randint(0, 7999) for _ in range(num_samples)]
 # Create a figure
 fig = plt.figure(figsize=(15, 5))
 # Set the overall figure title
@@ -47,9 +49,9 @@ for i in range(num_samples):
     # Create subplots
     plt.subplot(1, num_samples, i + 1)  
     # Plot image
-    plt.imshow(image_data[i], cmap='gray') 
+    plt.imshow(image_data[sample_ids[i]], cmap='gray') 
     # Set subplot title
-    plt.title(f"Cube Location {vector_df[i]}", fontsize=12)  
+    plt.title(f"Cube Location {vector_df[sample_ids[i]]}", fontsize=12)  
     # Turn off axis labels
     plt.axis('off')
 # Adjust layout for better spacing
