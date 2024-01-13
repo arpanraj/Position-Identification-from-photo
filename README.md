@@ -1,6 +1,6 @@
-# Position Identification from Image
+# 3D Position Identification from Image
 
-This repository contains Python code for a research project focused on identifying the positions of cubes in screenshots. The project uses image processing techniques and machine learning to achieve cube location prediction with 95% accuracy from 64x64px image.
+This repository contains Python code for a research project focused on identifying the 3 dimensional positions of cubes in screenshots. The project uses image processing techniques and machine learning to achieve cube location prediction with 95% accuracy from 64x64px image.
 
 ## Overview
 
