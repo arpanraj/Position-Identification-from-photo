@@ -18,6 +18,10 @@ The code is organized into several sections:
 
 4. **Model Architecture**: A convolutional neural network (CNN) model is defined using TensorFlow's Keras API. The model is designed to predict the x, y, and z coordinates of cube positions.
 
+<p align="center">
+  <img src="/readme_images/ModelArchitecture.png" alt="Model Architecture">
+</p>
+
 5. **Model Training**: The defined model is trained on the preprocessed data. Training progress is visualized through plots of accuracy and loss.
 
 <p align="center">
